@@ -86,9 +86,7 @@ func (client *Client) PublicChat() {
 	for {
 		fmt.Println(">>>>请输入聊天内容")
 		fmt.Scanln(&chatMsg)
-		if strings.Trim(chatMsg, " ") == "exit" {
-			break
-		} else if len(chatMsg) > 0 {
+		if len(chatMsg) > 0 {
 			sendMsg := chatMsg + "\r\n<----------------------------------------------------------来自群消息" + "\n"
 			_, err := client.Conn.Write([]byte(sendMsg))
 			fmt.Println("你对大家说:", chatMsg)
@@ -125,9 +123,7 @@ func (client *Client) PrivateChat() {
 		fmt.Println(">>>>现在用户在线情况为")
 		client.SelectUsers()
 		fmt.Scanln(&inputValue)
-		if strings.Trim(inputValue, " ") == "exit" {
-			break
-		} else if len(strings.Split(inputValue, "：")) == 2 || len(strings.Split(inputValue, ":")) == 2 {
+		if len(strings.Split(inputValue, "：")) == 2 || len(strings.Split(inputValue, ":")) == 2 {
 			data := strings.Split(inputValue, ":")
 			if len(data) <= 1 {
 				data = strings.Split(inputValue, "：")
