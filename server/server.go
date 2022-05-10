@@ -45,7 +45,7 @@ func (t *Server) ListenMessage() {
 
 //广播消息
 func (t *Server) BroadCast(user *User, msg string) {
-	sendMsg := "【" + user.Addr + "】" + user.Name + ":" + msg
+	sendMsg := "【" + user.Name + "】:" + msg
 
 	log.Logger.Info.Println("广播消息:" + sendMsg)
 

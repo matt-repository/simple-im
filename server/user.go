@@ -80,7 +80,7 @@ func (t *User) DoMessage(msg string) {
 			t.server.OnlineMap[newName] = t
 			t.server.mapLock.Unlock()
 			t.Name = newName
-			t.SendMsg("您的用户名已改变成：【" + newName + "】\n")
+			t.SendMsg("您的用户名已改变成:【" + newName + "】\n")
 		}
 		//私聊协议
 	} else if len(msg) > 4 && msg[:3] == "to|" {
@@ -109,7 +109,7 @@ func (t *User) DoMessage(msg string) {
 		if remoteUser.Name == t.Name {
 			remoteUser.SendMsg("不允许给自己发送消息！！！")
 		} else {
-			remoteUser.SendMsg(t.Name + "说:" + content)
+			remoteUser.SendMsg("【" + t.Name + "】" + ":" + content)
 		}
 
 		//发送消息 广播除了自己的

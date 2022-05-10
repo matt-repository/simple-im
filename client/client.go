@@ -42,8 +42,8 @@ var serverPort = 6999
 func init() {
 
 	fmt.Println("准备连接冯骎的IM服务器...")
-	//flag.StringVar(&serverIp,"ip","127.0.0.1","设置服务器IP地址（默认是127.0.0.1）")
-	//flag.IntVar(&serverPort,"port",8888,"设置服务器端口是（默认是8888）")
+	flag.StringVar(&serverIp, "ip", "127.0.0.1", "设置服务器IP地址（默认是127.0.0.1）")
+	flag.IntVar(&serverPort, "port", 6999, "设置服务器端口是（默认是6999）")
 }
 
 //处理server回应的消息，直接显示到标准输出即可
@@ -57,8 +57,8 @@ func (client *Client) menu() bool {
 	var command string
 	fmt.Printf("  \n")
 	fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>菜单Start<<<<<<<<<<<<<<<<<<<<<<<<")
-	fmt.Println("1.公聊模式")
-	fmt.Println("2.私聊模式")
+	fmt.Println("1.发送群消息")
+	fmt.Println("2.私发消息")
 	fmt.Println("3.更新用户名")
 	fmt.Println("4.查询在线用户")
 	fmt.Println("0.退出")
@@ -82,23 +82,21 @@ func (client *Client) menu() bool {
 
 //公聊逻辑
 func (client *Client) PublicChat() {
-
 	var chatMsg string
-
 	for {
 		fmt.Println(">>>>请输入聊天内容")
-		fmt.Println(">>>>退出公聊模式，请输入exit")
 		fmt.Scanln(&chatMsg)
 		if strings.Trim(chatMsg, " ") == "exit" {
 			break
 		} else if len(chatMsg) > 0 {
-			sendMsg := chatMsg + "\t\t\t\t<==来自公聊消息" + "\n"
-
+			sendMsg := chatMsg + "\r\n<----------------------------------------------------------来自群消息" + "\n"
 			_, err := client.Conn.Write([]byte(sendMsg))
+			fmt.Println("你对大家说:", chatMsg)
 			if err != nil {
 				fmt.Println("conn write err:", err)
 				break
 			}
+			break
 		} else {
 			fmt.Println("输入的消息不可为空")
 		}
@@ -122,24 +120,28 @@ func (client *Client) PrivateChat() {
 	var chatMsg string
 	var remoteName string
 	var inputValue string
-	client.SelectUsers()
-
 	for {
-		fmt.Println(">>>>请输入聊天内容  如你想对小明发送你好  你需输入： 小明:你好")
-		fmt.Println(">>>>退出私聊模式，请输入exit")
+		fmt.Println(">>>>请输入聊天内容  如你想对小明（用户名）发送你好  你需输入： 小明:你好")
+		fmt.Println(">>>>现在用户在线情况为")
+		client.SelectUsers()
 		fmt.Scanln(&inputValue)
 		if strings.Trim(inputValue, " ") == "exit" {
 			break
-		} else if len(strings.Split(inputValue, ":")) == 2 {
+		} else if len(strings.Split(inputValue, "：")) == 2 || len(strings.Split(inputValue, ":")) == 2 {
 			data := strings.Split(inputValue, ":")
+			if len(data) <= 1 {
+				data = strings.Split(inputValue, "：")
+			}
 			remoteName = data[0]
-			chatMsg = data[1] + "\t\t\t\t<==来自私聊消息"
+			chatMsg = data[1] + "\r\n<----------------------------------------------------------来自私人消息"
 			sendMsg := "to|" + remoteName + "|" + chatMsg + "\n"
+			fmt.Println("你对【" + remoteName + "】说:" + data[1])
 			_, err := client.Conn.Write([]byte(sendMsg))
 			if err != nil {
 				fmt.Println("conn Write err:", err)
 				break
 			}
+			break
 		} else {
 			fmt.Println("您输入的消息不符合规范,请重新输入!!!")
 		}
@@ -186,7 +188,7 @@ func (client *Client) Run() {
 		case 4:
 			client.SelectUsers()
 		}
-
+		client.Flag = 99
 	}
 }
 
