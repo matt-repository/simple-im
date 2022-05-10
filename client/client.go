@@ -41,7 +41,7 @@ var serverPort = 6999
 // ./client -ip 127.0.0.1 -port 6999
 func init() {
 
-	fmt.Println("准备连接冯骎的IM服务器...")
+	fmt.Println("准备连接小菜的IM服务器...")
 	flag.StringVar(&serverIp, "ip", "127.0.0.1", "设置服务器IP地址（默认是127.0.0.1）")
 	flag.IntVar(&serverPort, "port", 6999, "设置服务器端口是（默认是6999）")
 }
