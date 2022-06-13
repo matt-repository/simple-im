@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11b2b65-817c-4626-aa16-0d68e82a9510" name="Default Changelist" comment="更新一下">
-      <change afterPath="$PROJECT_DIR$/demo2/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/client/comm/frame/frame.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/client/comm/packet/packet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/client/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/comm/frame/frame.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/log/log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/log/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2/server/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/client/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/client/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/log/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/log/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo2/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo2/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +43,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GoodSource/chatserver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="proofread" />
   </component>
   <component name="RecentsManager">
