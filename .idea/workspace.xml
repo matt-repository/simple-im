@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e11b2b65-817c-4626-aa16-0d68e82a9510" name="Default Changelist" comment="更新一下">
+      <change afterPath="$PROJECT_DIR$/demo2/client/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/client/comm/frame/frame.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/client/comm/packet/packet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/client/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/comm/frame/frame.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/log/log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/log/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2/server/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/client/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/log/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/log/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/log/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/server/user.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="28yQYyoIkYcBwFvWMOfMft9bRvy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GoodSource/chatserver" />
+    <property name="settings.editor.selected.configurable" value="proofread" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Github\SimpleIM\demo2\client" />
+      <recent name="D:\Programming\Github\SimpleIM\demo2\comm" />
+      <recent name="D:\Programming\Github\SimpleIM\demo2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Github\SimpleIM\demo2\server" />
+      <recent name="D:\Programming\Github\SimpleIM\demo1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build goland-IM-System/client">
+    <configuration name="go build goland-IM-System/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SimpleIM" />
+      <working_directory value="$PROJECT_DIR$/client" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/client/client.go" />
+      <package value="goland-IM-System/client" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goland-IM-System/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="SimpleIM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/server/main.go" />
+      <package value="goland-IM-System/server" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goland-IM-System/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SimpleIM" />
+      <working_directory value="$PROJECT_DIR$/server" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/server/main.go" />
+      <package value="goland-IM-System/server" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SimpleIM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/server/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build goland-IM-System/server" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build goland-IM-System/client" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build goland-IM-System/client" />
+        <item itemvalue="Go Build.go build goland-IM-System/server" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build goland-IM-System/server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="最新版本" />
+    <MESSAGE value="更新一下" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新一下" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/demo1/server/user.go</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
